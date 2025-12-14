@@ -1,0 +1,37 @@
+# Исполняемые файлы
+/table_route_cipher
+/table_route_cipher.exe
+
+# Объектные файлы
+*.o
+*.obj
+
+# Файлы зависимостей
+*.d
+
+# Временные файлы
+*~
+*.tmp
+*.swp
+*.swo
+
+# Файлы сборки
+/build/
+/dist/
+/out/
+
+# IDE файлы
+.vscode/
+.idea/
+*.code-workspace
+
+# Резервные копии
+*.bak
+*.backup
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log

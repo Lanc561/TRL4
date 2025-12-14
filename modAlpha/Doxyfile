@@ -1,0 +1,45 @@
+# Doxyfile для проекта модифицированного алфавитного шифра
+# Автор: Генералов Л.К., Версия: 1.0, Год: 2025, Издательство: ИБСТ ПГУ
+
+# Базовые настройки
+PROJECT_NAME           = "Модифицированный алфавитный шифр"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Реализация модифицированного алфавитного шифра"
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = Russian
+
+# Входные файлы
+INPUT                  = src src/headers
+RECURSIVE              = YES
+FILE_PATTERNS          = *.cpp *.h *.hpp
+
+# Извлечение документации
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+# HTML документация
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+
+# LaTeX документация (для PDF)
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = latex
+LATEX_CMD_NAME         = pdflatex
+COMPACT_LATEX          = NO
+PDF_HYPERLINKS         = YES
+USE_PDFLATEX           = YES
+
+# Поиск и индексация
+SOURCE_BROWSER         = YES
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 3
+
+# Предупреждения
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_FORMAT            = "$file:$line: $text"
