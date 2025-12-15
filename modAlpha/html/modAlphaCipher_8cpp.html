@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Модифицированный алфавитный шифр: Файл src/modAlphaCipher.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Модифицированный алфавитный шифр<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Реализация модифицированного алфавитного шифра</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Файл modAlphaCipher.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Реализация методов класса <a class="el" href="classmodAlphaCipher.html" title="Класс для шифрования и дешифрования текста">modAlphaCipher</a>.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="modAlphaCipher_8h_source.html">modAlphaCipher.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;locale&gt;</code><br />
+<code>#include &lt;codecvt&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для modAlphaCipher.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="modAlphaCipher_8cpp__incl.png" border="0" usemap="#asrc_2modAlphaCipher_8cpp" alt=""/></div>
+<map name="asrc_2modAlphaCipher_8cpp" id="asrc_2modAlphaCipher_8cpp">
+<area shape="rect" title="Реализация методов класса modAlphaCipher." alt="" coords="339,5,518,31"/>
+<area shape="rect" href="modAlphaCipher_8h.html" title="Заголовочный файл для класса модифицированного алфавитного шифра" alt="" coords="225,79,366,104"/>
+<area shape="poly" title=" " alt="" coords="408,33,330,74,328,70,406,28"/>
+<area shape="rect" title=" " alt="" coords="361,152,422,177"/>
+<area shape="poly" title=" " alt="" coords="428,32,400,139,395,138,423,30"/>
+<area shape="rect" title=" " alt="" coords="447,152,520,177"/>
+<area shape="poly" title=" " alt="" coords="436,30,477,138,472,140,431,32"/>
+<area shape="rect" title=" " alt="" coords="491,79,571,104"/>
+<area shape="poly" title=" " alt="" coords="447,28,505,68,502,73,444,33"/>
+<area shape="rect" title=" " alt="" coords="203,152,254,177"/>
+<area shape="poly" title=" " alt="" coords="286,106,251,144,247,140,282,103"/>
+<area shape="rect" title=" " alt="" coords="278,152,337,177"/>
+<area shape="poly" title=" " alt="" coords="300,104,306,138,300,139,295,105"/>
+<area shape="rect" title=" " alt="" coords="5,152,68,177"/>
+<area shape="poly" title=" " alt="" coords="254,107,82,154,81,149,253,101"/>
+<area shape="poly" title=" " alt="" coords="312,102,366,141,363,146,309,106"/>
+<area shape="poly" title=" " alt="" coords="326,102,441,144,439,149,325,107"/>
+<area shape="rect" title=" " alt="" coords="92,152,179,177"/>
+<area shape="poly" title=" " alt="" coords="271,106,175,149,173,144,269,102"/>
+</map>
+</div>
+</div>
+<p><a href="modAlphaCipher_8cpp_source.html">См. исходные тексты.</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Реализация методов класса <a class="el" href="classmodAlphaCipher.html" title="Класс для шифрования и дешифрования текста">modAlphaCipher</a>. </p>
+<dl class="section author"><dt>Автор</dt><dd>Генералов Л.К. </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>ИБСТ ПГУ </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025</dd></dl>
+<p>Содержит реализацию основных методов шифрования и дешифрования, а также вспомогательных методов преобразования. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="modAlphaCipher_8cpp_source.html">modAlphaCipher.cpp</a></p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
